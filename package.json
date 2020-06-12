@@ -1,0 +1,27 @@
+{
+  "name": "helper",
+  "version": "1.0.0",
+  "main": "index.html",
+  "author": "Octav",
+  "license": "MIT",
+  "scripts": {
+    "serve": "live-server public/",
+    "build": "webpack --watch"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^3.5.3",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "jquery": "^3.5.1",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1",
+    "webpack": "^4.2.9",
+    "webpack-cli": "^3.3.11",
+    "sass-loader": "6.0.6",
+    "style-loader": "0.18.2"
+  }
+}

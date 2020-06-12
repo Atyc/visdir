@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/styles.css">
+	<title>Customers</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Customer list</h1>
+		<div class="sort-options">
+			<div class="sort-name">Sort by name</div>
+			<div class="sort-city">Sort by City</div>
+		</div>
+		<div class="customer-table">
+			<header>
+				<div class="col">Name</div>
+				<div class="col">Surname</div>
+				<div class="col">Email</div>
+				<div class="col">Phone</div>
+				<div class="col">Age</div>
+				<div class="col">City</div>
+			</header>
+
+		</div>
+
+		<button id="add-new-customer">Add new customer</button>
+
+		<div class="modal">
+			<div class="modal-overlay"></div>
+			<div class="modal-content-wrapper">
+				<div class="modal-content">
+					<form id="add-customer-form">
+						<div class="close-modal"><span>&#10005;</span></div>
+						<h3>Add new customer</h3>
+						<div>*mandatory fields</div>
+						<input type="text" id="Name" placeholder="Name*" name="Name">
+						<input type="text" placeholder="Surname" name="Surname">
+						<input type="text" id="Email" placeholder="Email*" name="Email">
+						<input type="text" placeholder="Phone number" name="Phone">
+						<input type="text" placeholder="Age" name="Age">
+						<input type="text" placeholder="City" name="City">
+						<button id="cancel" type="cancel">Cancel</button>
+						<button type="submit">Submit</button>
+						<div class="confirmation">New customer added</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="/bundle.js"></script>
+</body>
+
+</html>
